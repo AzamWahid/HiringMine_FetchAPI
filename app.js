@@ -2,7 +2,7 @@ const fifthBoxes = document.querySelector('.fifth-boxes');
 
 
 async function getTopJobs() {
-    const topJobs = await fetch('https://backend-prod.app.hiringmine.com/api/jobAds/all?limit=8&pageNo=1&keyWord=&category=&isPending=false');
+    const topJobs = await fetch('https://backend-prod.app.hiringmine.com/api/jobAds/all?limit=6&pageNo=1&keyWord=&category=&isPending=false');
     const topJobsJson = await topJobs.json();
 
     console.log(topJobsJson.data)
